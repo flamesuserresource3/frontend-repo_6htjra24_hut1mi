@@ -22,7 +22,7 @@ export default function ContactCTA() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                const form = e.currentTarget as HTMLFormElement;
+                const form = e.currentTarget;
                 const data = new FormData(form);
                 const name = data.get('name');
                 const message = data.get('message');
